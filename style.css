@@ -44,7 +44,7 @@
 }
 /*General Page*/
 body {
-  background: #fff no-repeat center center fixed;
+  background: #fbfbfb no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -77,6 +77,7 @@ body {
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
+    background: rgba(242, 242, 242, 0.4); /*leave opacity for dark mode*/
 }
 
 .card-signin .card-title {
@@ -86,19 +87,15 @@ body {
   font-size: 1.5rem;
 }
 
-.card-signin .card-img-left {
-  width: 0;
-  /* Link to your background image using in the property below! */
-  background: #fbfbfb
-}
 
 .card-signin .card-body {
   padding: 3.5rem;
     margin-left: 9rem;
+    
 }
 
 .card-body {
-    background: #fbfbfb
+     /*leave opacity for dark mode*/
 }
 .form-signin {
   width: 70%;
@@ -194,6 +191,8 @@ color: #fff;
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    background: rgba(242, 242, 242, 0.4);
+    
 }
 
 .card-login .card-title {
@@ -312,7 +311,7 @@ color: #fff;
 		/*CONTACT Page*/
 		
 .contact-form{
-    background: #fbfbfb;
+    background: rgba(242, 242, 242, 0.4);
     margin-top: 10%;
     margin-bottom: 5%;
     width: 70%;
@@ -353,31 +352,36 @@ color: #fff;
 
 		/*FAQ Page*/
 		
+		
 		/*ABOUT PAGE*/
 	
 	
+	
 /*------------------- ! DARK MODE ! ---------------- */
-.dark {
-	background-color: #454d54;
-	color: black;
-
-}
-.dark .card-dark { /*NOT IN USE YET*/
-	background-color: #999999;
+.op {
+    background: rgba(242, 242, 242, 0.4); /*opacity color for containers*/
+    
 }
 
-/*
-#content.dark {
-	color:black
-}
-
-#card.dark {
-	background-color: #999999;
+.nav-op {
+    background: rgba(230, 230, 230, 0.4); /*opacity and color for navbar*/
 }
 
 
+[data-theme="dark"] {
+  background-color: #454d54; !important;
+  color: black;
+}
 
-#logo.dark {
-	
-	
-} */
+[data-theme="dark"] .bg-light {
+  background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+}
+
